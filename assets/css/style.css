@@ -104,6 +104,14 @@
   .contacts {
     color: white;
   }
+
+.container img {
+    transition: filter 0.5s ease-in-out;
+}
+
+.container:hover img {
+    filter: brightness(1.2);
+  }
   
   /* This media query should be what it would change to for tablet sized devices, according to google 767 is max width */
   @media screen and (max-width: 767px) {
