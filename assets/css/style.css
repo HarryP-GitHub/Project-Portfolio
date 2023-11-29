@@ -1,0 +1,150 @@
+:root {
+    --blue: #215ad7;
+    --darkblue: #0d44bb;
+    --darkgray: #2b2a2a;
+    --lightgray: #5d5d5d;
+  }
+  
+  header {
+    padding: 10px;
+    text-align: center;
+    background-color: var(--darkblue);
+    color: #fff;
+    text-decoration: underline;
+    font-size: 150%;
+  }
+  
+  nav {
+    display: flex;
+    background-color: var(--darkblue);
+  }
+  
+  nav a {
+    color: white;
+    border: 4px dashed var(--blue);
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+  }
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  aside {
+    flex: 1;
+    background-color: var(--blue);
+    padding: 20px;
+    text-decoration: underline;
+    color: white;
+  }
+  
+  aside h2 {
+    color: white;
+  }
+  
+  
+  section {
+    flex: 3;
+    background-color: var(--blue);
+    padding: 20px;
+  }
+  
+  
+  .hide {
+    visibility: hidden;
+  }
+  
+  section h2 {
+    color: white;
+  }
+  
+  section p {
+    color: white;
+    line-height: 2;
+  }
+  .box {
+    display: flex;
+    background-color: var(--darkblue);
+    max-width: 100%;
+    padding: 20px;
+    height: auto;
+    border: 3px solid var(--darkgray);
+    border-radius: 10px;
+  }
+  
+  .container {
+    display: flex;
+    max-width: 100%;
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  img {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .round {
+    border-radius: 30px;
+  }
+  footer {
+    padding: 20px;
+    text-align: center;
+    background-color: var(--darkblue);
+    color: #fff;
+  }
+  
+  footer a {
+    line-height: 2;
+  }
+  .contacts {
+    color: white;
+  }
+  
+  /* This media query should be what it would change to for tablet sized devices, according to google 767 is max width */
+  @media screen and (max-width: 767px) {
+    /* I am using flex-direction to stack the navbar, aside and body sections. */
+    main,
+    nav {
+      flex-direction: column;
+    }
+    /* This makes the aside bar stack above the sections */
+    aside {
+      order: 0;
+    }
+    /* Change the header backgroun */
+    header, 
+    nav {
+      background-color: var(--darkgray);
+    }
+    /* When the page is changed the nav and footer will turn dark gray */
+  
+    footer {
+      background-color: var(--darkgray);
+    }
+  }
+  
+  /* This media query is for smart phones, according to google have max width of 480px, follows same protocol as above, except will change to lighter gray */
+  @media screen and (max-width: 480px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  
+    aside {
+      order: 0;
+    }
+  
+    header,
+    nav {
+      background-color: var(--lightgray);
+    }
+  
+    footer {
+      background-color: var(--lightgray);
+    }
+  }
