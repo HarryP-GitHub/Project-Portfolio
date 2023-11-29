@@ -2,10 +2,13 @@
     box-sizing: border-box;
 }
 
+/* makes the border a box, which tells the browser to take in border and padding values */
+
 html {
   height: 100%;
 }
 
+/* done to standardise the page, giving the default font */
 body {
   min-height: 100%;
   line-height: 1;
@@ -13,12 +16,12 @@ body {
   margin: 0;
 }
 
-
-​ol,
+/* Removing the bullet points from the lists */
 ul {
   list-style: none;
 }
 
+/* getting rid of underlines for the links and making the links bold */
 a {
     text-decoration: none;
     font-weight: bold;

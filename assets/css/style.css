@@ -4,7 +4,10 @@
     --darkgray: #2b2a2a;
     --lightgray: #5d5d5d;
   }
+
+  /* added variables so that it can make the rest of the code easier */
   
+  /* Added these to stylise the header and give enough space to make the header look nice */
   header {
     padding: 10px;
     text-align: center;
@@ -14,11 +17,13 @@
     font-size: 150%;
   }
   
+  /* the nav has flex properties so it will move the way it does when resizing the page */
   nav {
     display: flex;
     background-color: var(--darkblue);
   }
   
+  /* added styling here */
   nav a {
     color: white;
     border: 4px dashed var(--blue);
@@ -27,11 +32,13 @@
     text-align: center;
   }
   
+  /* main is flex, with wrap properties so it will wrap around when page is resized */
   main {
     display: flex;
     flex-wrap: wrap;
   }
   
+  /* used aside feature so that it would look similar to wireframing */
   aside {
     flex: 1;
     background-color: var(--blue);
@@ -44,14 +51,14 @@
     color: white;
   }
   
-  
+  /* flex at 3 so that the page will display as it does */
   section {
     flex: 3;
     background-color: var(--blue);
     padding: 20px;
   }
   
-  
+  /* I did this so that the page would still maintain proportions, there is probably a better way to do this */
   .hide {
     visibility: hidden;
   }
@@ -60,10 +67,13 @@
     color: white;
   }
   
+/* adjusted line-height because the spacing between the lines felt like it didn't fill the section */
   section p {
     color: white;
     line-height: 2;
   }
+
+/* flex box */
   .box {
     display: flex;
     background-color: var(--darkblue);
@@ -74,6 +84,8 @@
     border-radius: 10px;
   }
   
+  /* both .container and img are here so that the image would stay within the container and not break out when adjusting the page */
+
   .container {
     display: flex;
     max-width: 100%;
@@ -88,9 +100,14 @@
     height: auto;
   }
   
+  /* .round is to round the image */
+  
   .round {
     border-radius: 30px;
   }
+
+  /* centered the footer makes it wrap up the page nicely, in my opinion */
+
   footer {
     padding: 20px;
     text-align: center;
@@ -98,16 +115,23 @@
     color: #fff;
   }
   
+  /* added for nicer looking spacing */
+
   footer a {
     line-height: 2;
   }
+
   .contacts {
     color: white;
   }
 
+/* .container img and :hover features used to make the picture glow when highlighted */
+
 .container img {
     transition: filter 0.5s ease-in-out;
 }
+
+/* used filter: brightness(); to get the effect in the moc, I think there is other ways to achieve it */
 
 .container:hover img {
     filter: brightness(1.2);

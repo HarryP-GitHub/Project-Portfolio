@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
    <link rel="stylesheet" type="text/css" href="./assets/css/reset.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-  </head>
+  </head> <!-- made sure to add reset first before style -->
   <body>
     <header>
       <h1>Project Portfolio</h1>
     </header>
-
+    <!-- Nav bar here, linking to each section-->
     <nav>
           <a href="#about-me">About Me</a>
           <a href="#main-project">Recent Work</a>
@@ -22,7 +22,7 @@
     <main>
       <aside>
         <h2 id="about-me" class="about-me">About Me - Harry Potter</h2>
-        <div class="box">
+        <div class="box"> <!-- Used box as the class to identify the box-->
           <img class="round" src="assets/images/profile pic.jpg" alt="Hi, this is a picture of me, Harry Potter">
         </div>
       </aside>
@@ -37,12 +37,12 @@
     <main>
       <aside>
         <h2 id="main-project" class="main-project">Main Project</h2>
-        <div class="hide" class="box">Image</div>  
+        <div class="hide" class="box">Image</div> <!-- added hide class to parts I wanted to hide, I think there is better ways to do this-->
       </aside>
       <section>
         <h2>Refactoring a Website</h2>
         <div class="box">
-          <div class="container">
+          <div class="container"> <!-- used container to identify the container, so the image would stay inside and could base its proportions within it -->
             <a href="https://harryp-github.github.io/Horiseon-Website-Refactoring/">
               <img src="assets/images/Horiseon website.png" alt="This is the most recent project, this project was refactoring a website for better accessibility.">
             </a>
@@ -53,16 +53,16 @@
     <main>
       <aside>
         <h2 id="projects" class="projects">Other Projects</h2>
-        <div class="hide" class="box">Image</div>
+        <div class="hide" class="box">Image</div> 
       </aside>
       <section>
         <h2 class="projects">Prework Study Guide</h2>
         <div class="box">
-          <div class="container">
+          <div class="container"> <!-- Used href to link to websites, for all project sections-->
             <a href="https://harryp-github.github.io/prework-study-guide/">
               <img src="assets/images/Project 2.png" alt="This project was creating a prework study guide.">
-           
-            </a>
+              <!-- assets are located in image folder and used alt to improve accessibility -->
+            </a>    
           </div>
       </div>
       </section>
